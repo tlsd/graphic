@@ -232,7 +232,7 @@ class _ChartState<D> extends State<Chart<D>> {
   void dispose() {
     super.dispose();
 
-    RendererBinding.instance.mouseTracker
+    RendererBinding.instance!.mouseTracker
         .removeListener(_handleMouseTrackerChange);
   }
 
